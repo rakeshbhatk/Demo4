@@ -11,7 +11,6 @@ pipeline {
 
           }
           steps {
-            sh './jenkins/build.sh'
             stash(name: 'Java 8', includes: 'target/**')
           }
         }
@@ -24,7 +23,6 @@ pipeline {
 
           }
           steps {
-            sh './jenkins/build.sh'
             archiveArtifacts 'target/*.jar'
             stash(name: 'Java 7', includes: 'target/**')
           }
