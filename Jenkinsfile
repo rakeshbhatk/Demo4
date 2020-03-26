@@ -23,7 +23,6 @@ pipeline {
 
           }
           steps {
-            archiveArtifacts 'target/*.jar'
             stash(name: 'Java 7', includes: 'target/**')
           }
         }
