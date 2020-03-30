@@ -6,7 +6,7 @@ pipeline {
         stage('Build Java 8') {
           agent {
             docker {
-              image 'b36e2707d308'
+              image '59f8784e08ee'
             }
 
           }
@@ -18,7 +18,7 @@ pipeline {
         stage('Build Java 7') {
           agent {
             docker {
-              image 'b36e2707d308'
+              image '59f8784e08ee'
             }
 
           }
