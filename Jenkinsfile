@@ -5,8 +5,8 @@ pipeline {
       parallel {
         stage('Build Java 8') {
           agent {
-            node {
-              label 'docker'
+            docker {
+              image 'jenkins/jenkins'
             }
 
           }
