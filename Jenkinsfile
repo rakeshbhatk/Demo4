@@ -6,7 +6,7 @@ pipeline {
         stage('Build Java 8') {
           agent {
             node {
-              label 'Java8'
+              label 'docker'
             }
 
           }
