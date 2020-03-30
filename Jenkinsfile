@@ -5,8 +5,8 @@ pipeline {
       parallel {
         stage('Build Java 8') {
           agent {
-            node {
-              label 'Java8'
+            docker {
+              image 'b36e2707d308'
             }
 
           }
@@ -17,8 +17,8 @@ pipeline {
 
         stage('Build Java 7') {
           agent {
-            node {
-              label 'Java8'
+            docker {
+              image 'b36e2707d308'
             }
 
           }
