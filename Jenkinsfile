@@ -11,7 +11,7 @@ pipeline {
 
           }
           steps {
-            stash(name: 'Java 8', includes: 'target/**')
+            bat 'echo "hello"'
           }
         }
 
@@ -23,7 +23,7 @@ pipeline {
 
           }
           steps {
-            stash(name: 'Java 7', includes: 'target/**')
+            bat 'echo "hello"'
           }
         }
 
