@@ -11,19 +11,19 @@ pipeline {
 
           }
           steps {
-            bat 'echo "hello"'
+            sh 'echo "In Java8"'
           }
         }
 
         stage('Build Java 7') {
           agent {
             node {
-              label 'Java8'
+              label 'master'
             }
 
           }
           steps {
-            bat 'echo "hello"'
+            sh 'echo "in master"'
           }
         }
 
